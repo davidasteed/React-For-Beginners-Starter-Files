@@ -4,7 +4,7 @@ import { getFunName } from "../helpers";
 
 class StorePicker extends React.Component {
   static propTypes = {
-    history: PropTypes.object
+    history: PropTypes.object.isRequired
   };
   myInput = React.createRef(); // "surface" the <input> on the React component so we can "grab" it
 

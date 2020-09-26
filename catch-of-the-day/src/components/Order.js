@@ -5,10 +5,10 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 class Order extends React.Component {
   static propTypes = {
-    deleteFish: PropTypes.func,
-    fishes: PropTypes.object,
-    order: PropTypes.object,
-    removeFromOrder: PropTypes.func
+    deleteFish: PropTypes.func.isRequired,
+    fishes: PropTypes.object.isRequired,
+    order: PropTypes.object.isRequired,
+    removeFromOrder: PropTypes.func.isRequired
   };
 
   renderOrder = (key) => {

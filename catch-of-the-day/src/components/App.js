@@ -16,8 +16,8 @@ class App extends React.Component {
 
   static propTypes = {
     match: PropTypes.shape({
-      params: PropTypes.object
-    })
+      params: PropTypes.object.isRequired
+    }).isRequired
   };
 
   componentDidMount() {
@@ -139,6 +139,7 @@ class App extends React.Component {
           fishes={this.state.fishes}
           loadSampleFishes={this.loadSampleFishes}
           removeFromOrder={this.removeFromOrder}
+          storeId={this.props.match.params.storeId}
           updateFish={this.updateFish}
         />
       </div>
